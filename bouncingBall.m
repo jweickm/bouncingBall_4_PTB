@@ -1,5 +1,5 @@
 © Jakob Weickmann, 2019
-function bouncingBall_3(speed, radius, balls, random_angles, angles, precision)
+function bouncingBall(speed, radius, balls, random_angles, angles, precision)
 % bouncingBall(speed, radius, balls, random_angles[0 or 1], angles[vector], precision)
 % This function creates colourful bouncing balls. Press the up arrow to
 % make them move faster and the down arrow to slow them down. With the '+'
@@ -36,8 +36,7 @@ if random_angles == 1
     angles = randi(360,1,balls);
 end
 if nargin < 6 
-    % precision is how many pixels inside of the figure the collision detection
-    % should stop
+    % precision is how many pixels inside of the figure the collision detection should stop
     precision = 10;
 end
 
